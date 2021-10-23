@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:regular,700" rel="stylesheet" />
+    <style>
+        .contanier{
+            margin: 5% auto;
+            width: 90%;
+        }
+        .card{
+            border: 1px solid red;
+            height: 800px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.418);
+            margin-bottom: 100px;
+        }
+        .card0{
+            background-color: blueviolet;
+        }
+        .card1{
+            background-color: rgb(226, 43, 211);
+        }
+        .card2{
+            background-color: rgb(43, 226, 226);
+        }
+        .card3{
+            background-color: rgb(43, 226, 52);
+        }
+        .card h1{
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            margin-top: 200px;
+            font-family: tangerine;
+        }
+        .card .my-img{
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier">
+        <div class="card card0 odd">
+            <h1>Hi!!!</h1>
+            <img class="my-img" src="https://c.tenor.com/je5qoQToik0AAAAC/spongebob-hi.gif" alt="">
+        </div> 
+        <div class="card card1 even">
+            <img class="my-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkEqphh6ioAWeZ9dgTVLmw3QpMwlt9E5PBBg&usqp=CAU" alt="">
+            <h1>My name is Dhairya Arora.</h1>
+        </div>
+        <div class="card card2 odd">
+            <h1>I love to code, making origami and play game.</h1>
+        </div>
+        <div class="card card3 even">
+            <h1>this is my small discription.</h1>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.odd',{
+            reset: true,
+            duration: 800,
+            origin: 'left',
+            distance: '100px',
+            delay: 200,
+            rotate: { y: 60, x: 60 },
+            scale: 2.1
+        });
+        ScrollReveal().reveal('.even',{
+            reset: true,
+            duration: 800,
+            origin: 'left',
+            distance: '100px',
+            delay: 200,
+            rotate: { y: -60, x: -60 },
+            scale: 0.1
+        });
+        ScrollReveal().reveal('.my-img',{
+            reset: true,
+            duration: 500,
+            origin: 'left',
+            distance: '100px',
+            delay: 500,
+            rotate: { y: -60, x: -60 },
+            scale: 0.1
+        });
+    </script>
+</body>
+</html>
